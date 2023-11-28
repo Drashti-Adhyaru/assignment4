@@ -1,0 +1,23 @@
+<div >
+    <h1>Car Information</h1>
+    <table class="data-table">
+    <tbody>
+
+    <tr>
+    <thead>
+        <th>Invoice</th>
+        <th>Manufacturer</th>
+        <th>Model</th>
+    </thead>
+    </tr>
+    {{#each data}}
+    <tr>
+        <td>{{this.InvoiceNo}}</td>
+        <td>{{this.Manufacturer}}</td>
+        <td>{{this.Model}}</td>
+    </tr>
+    {{/each}}
+
+</tbody>
+</table>
+</div>
