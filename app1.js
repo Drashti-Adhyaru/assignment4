@@ -59,7 +59,10 @@ app.set('view engine', 'hbs');
 mongoose.connect(database.url);
 
 var Book = require('./models/book');
- 
+ app.get('/', function(req, res) { // root route
+  res.render('index', { title: 'Assignment 4' });
+});
+
  
 //get all employee data from db
 app.get('/api/books',async function(req, res) {
